@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<bodies Load="Merge" >
+	<bodyparttypevariants>
+		
+		<!-- flesh beast parts -->
+		<bodyparttypevariant VariantOf="Hand" Type="Grasper" UsuallyOnVariant="Mid-Tail"/>
+		<bodyparttypevariant VariantOf="Tail" Type="Slithering Tail" Mobility="3" />
+		<bodyparttypevariant VariantOf="Arm" Type="Mid-Tail" />
+		
+		<!-- chaos beast parts -->
+		<bodyparttypevariant VariantOf="Arm" Type="Psychic Field" />
+		<bodyparttypevariant VariantOf="Hand" Type="Psychic Grasp" UsuallyOnVariant="Psychic Field" />
+		
+		<bodyparttypevariant VariantOf="Feet" Type="Levitator" Mobility="0" />
+		
+		<bodyparttypevariant VariantOf="Tail" Type="Floating Tail" Mobility="3" />
+		
+		<!-- floating brain parts -->
+		<bodyparttypevariant VariantOf="Face" Type="Floating Eyes" Plural="true" />
+		<bodyparttypevariant VariantOf="Back" Type="Spinal Chord" />
+		<bodyparttypevariant VariantOf="Arm" Type="Nerve" />
+		<bodyparttypevariant VariantOf="Hand" Type="Dendrite" UsuallyOnVariant="Nerve" DefaultBehavior="DendriteSpark" />
+		
+	</bodyparttypevariants>
+	
+	<anatomies>
+		<anatomy Name="KF_FleshBeast_Anatomy">
+			<part Type="Nuclear Protrusion">
+				<part Type="Sensory Ganglion" />
+			</part>
+			<part Type="Membrane" />
+			<part Type="Slithering Tail"  >
+				<part Type="Mid-Tail">
+					<part Type="Grasper" />
+				</part>
+			</part>
+			<part Type="Missile Weapon" />
+		</anatomy>
+		
+		<anatomy Name="KF_ChaosBeast_Anatomy">
+			<part Type="Nuclear Protrusion">
+				<part Type="Sensory Ganglion" />
+			</part>
+			<part Type="Membrane" />
+			<part Type="Psychic Field" Laterality="Right">
+				<part Type="Psychic Grasp" Laterality="Right" />
+			</part>			
+			<part Type="Psychic Field" Laterality="Left" >
+				<part Type="Psychic Grasp" Laterality="Left" />
+			</part>
+			<part Type="Missile Weapon" Laterality="Right" />			
+			<part Type="Missile Weapon" Laterality="Left" />
+			<part Type="Levitator" />
+			<part Type="Floating Tail"  />
+		</anatomy>
+		
+		<anatomy Name="KF_FloatingBrain_Anatomy">
+			<part Type="Floating Eyes" />
+			<part Type="Spinal Chord" >
+				<part Type="Nerve" Laterality="Right">
+					<part Type="Dendrite" Laterality="Right" />
+				</part>			
+				<part Type="Nerve" Laterality="Left" >
+					<part Type="Dendrite" Laterality="Left" />
+				</part>
+			</part>
+			<part Type="Missile Weapon" Laterality="Right" />			
+			<part Type="Missile Weapon" Laterality="Left" />
+			<part Type="Levitator" />
+			<part Type="Floating Nearby" Laterality="Upper Right" />
+			<part Type="Floating Nearby" Laterality="Upper Left" />
+			<!--<part Type="Floating Nearby" Laterality="Lower Right" />
+			<part Type="Floating Nearby" Laterality="Lower Left" />-->
+		</anatomy>
+		
+	</anatomies>
+</bodies>

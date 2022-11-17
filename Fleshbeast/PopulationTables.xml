@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<populations>
+
+  <population Name="StartingGear_Fleshbeast">
+    <group Name="Items" Style="pickeach">
+      <table Name="StartingGear_Common" />
+	  <object Blueprint="FoldingChair" Number="2" />
+      <object Blueprint="HalfFullWaterskin" Number="2" />
+	  <object Blueprint="Bandage" Number="2" />
+      <object Blueprint="Witchwood Bark" Number="2-3" />
+      <object Blueprint="KF_FlungStone" Number="10" />
+    </group>
+  </population>
+  
+   <population Name="StartingGear_Chaosbeast">
+    <group Name="Items" Style="pickeach">
+      <table Name="StartingGear_Common" />
+	  <object Blueprint="FoldingChair" Number="2" />
+      <object Blueprint="HalfFullWaterskin" Number="2" />
+	  <object Blueprint="Bandage" Number="2" />
+      <object Blueprint="Witchwood Bark" Number="2-3" />
+      <object Blueprint="KF_FlungStone" Number="10" />
+    </group>
+  </population> 
+  
+   <population Name="StartingGear_FloatingBrain">
+    <group Name="Items" Style="pickeach">
+      <table Name="StartingGear_Common" />
+	  <object Blueprint="FoldingChair" Number="2" />
+      <object Blueprint="HalfFullWaterskin" Number="2" />
+	  <object Blueprint="Bandage" Number="2" />
+      <object Blueprint="Witchwood Bark" Number="2-3" />
+      <object Blueprint="kf_TKRock" Number="1" />
+    </group>
+  </population>
+
+</populations>

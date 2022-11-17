@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<subtypes>
+
+  <class ID="KF_Skins" ChargenTitle="choose your {{rusty|skin}}" SingularTitle="{{rusty|skin}}" StatBoxDisplay="true">
+    <subtype Name="{{psychalflesh|Warped Monster}}" Code="flshsk1" Gear="StartingGear_Fleshbeast" BodyObject="PlayableFleshbeast" Tile="Creatures/kf_fleshbeast.png" DetailColor="r">
+        <stat Name="DV" Bonus="3" />
+		<stat Name="AV" Bonus="3" />
+      <extrainfo>A {{psychalflesh|warped monster}}, freshly hatched.</extrainfo>
+    </subtype>
+	
+    <subtype Name="{{extradimensional|Chaos Beast}}" Code="flshsk2" Gear="StartingGear_Chaosbeast" BodyObject="PlayableChaosbeast" Tile="Creatures/kf_fleshbeast.png" DetailColor="m">
+		<stat Name="AV" Bonus="3" />	
+      <extrainfo>A {{extradimensional|warped chaotic beast}}, freshly spawned.</extrainfo>
+    </subtype>
+	
+    <subtype Name="{{psionic|Floating Brain}}" Code="flshsk3" Gear="StartingGear_FloatingBrain" BodyObject="PlayableFloatingBrain" Tile="Creatures/kf_floatingbrain.png" DetailColor="R">
+	  <skills>
+        <skill Name="Persuasion" />
+        <skill Name="Persuasion_Intimidate" />
+		<skill Name="Persuasion_Proselytize" />
+      </skills>
+      <extrainfo>A {{psionic|floating brain}}, broken free from its skull prison.</extrainfo>
+    </subtype>	
+  </class>
+
+</subtypes>

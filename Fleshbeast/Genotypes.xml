@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<genotypes>
+
+  <genotype Name="KF_Fleshbeast" MutationPoints="0" StatPoints="22" AllowedMutationCategories="*" RandomWeight="0" DisplayName="{{rusty|Fleshbeast}}" Subtypes="KF_Skins" Class="" Tile="Creatures/kf_fleshbeast.png" DetailColor="w" BaseHPGain="0-7" BaseSPGain="60" IsTrueKin="false" IsMutant="false" CharacterBuilderModules="XRL.CharacterBuilds.Qud.QudCallingModule">
+    <stat Name="Strength" Minimum="13" Maximum="13" ChargenDescription="Your {{W|Strength}} score determines how effectively you penetrate your opponents' armor with melee attacks, how much damage your melee attacks do, your ability to resist forced movement, and your carry capacity."/>
+    <stat Name="Agility" Minimum="13" Maximum="13" ChargenDescription="Your {{W|Agility}} score determines your accuracy with both melee and ranged weapons and your ability to dodge attacks."/>
+    <stat Name="Toughness" Minimum="13" Maximum="13" ChargenDescription="Your {{W|Toughness}} score determines your number of hit points, your natural healing rate, and your ability to resist poison and disease."/>
+    <stat Name="Intelligence" Minimum="10" Maximum="20" ChargenDescription="Your {{W|Intelligence}} score determines your number of skill points and your ability to examine artifacts."/>
+    <stat Name="Willpower" Minimum="10" Maximum="20" ChargenDescription="Your {{W|Willpower}} score modifies the cooldowns of your activated abilities, determines your ability to resist mental attacks, and modifies your natural healing rate."/>
+    <stat Name="Ego" Minimum="10" Maximum="20" ChargenDescription="Your {{W|Ego}} score determines the potency of your ability to haggle with merchants, and your ability to dominate the wills of other living creatures."/>
+    <skills>
+	  <skill Name="Tactics_Run" />
+	  <skill Name="Tactics_Throwing" />
+	  <skill Name="Survival" />	  
+	  <skill Name="Dual_Wield_Offhand_Strikes" />
+    </skills>
+	
+    <extrainfo>A horrifying {{rusty|fleshy beast}}
+{{c|&#249;}} Starts off weak, but {{rusty|the body grows}}.
+{{c|&#249;}} Can you survive long enough to become a monster?
+  </extrainfo>
+  </genotype>
+</genotypes>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mutations>
+  <category Name="Physical">
+	<mutation Name="Omnivision" Cost="6" MaxSelected="1" Class="KF_Omnisight" Exclusions="DarkVision" BearerDescription="the all seeing" Tile="Mutations/night_vision.bmp" />
+  </category>
+</mutations>

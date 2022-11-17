@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects>
+
+	<!-- bodies -->
+    <object Name="PlayableFleshbeast" Inherits="Humanoid">
+		<mutation Name="Chimera" />
+		<mutation Name="KF_Omnisight" />
+		<mutation Name="KF_FleshbeastMutation" />
+		<part Name="Body" Anatomy="KF_FleshBeast_Anatomy" />
+        <tag Name="Fleshbeast" />
+    </object>
+	
+	<object Name="PlayableChaosbeast" Inherits="Humanoid">
+		<mutation Name="Telepathy" />
+		<mutation Name="KF_Omnisight" />
+		<mutation Name="KF_ChaosOrganMutation" />
+		<inventoryobject Blueprint="KF_ChaosLevitator" Number="1" />
+		<part Name="Body" Anatomy="KF_ChaosBeast_Anatomy" />
+        <tag Name="Chaosbeast" />
+    </object>
+	
+	<object Name="PlayableFloatingBrain" Inherits="Humanoid">
+		<mutation Name="Esper" />
+		<mutation Name="Telepathy" />
+		<mutation Name="KF_FloatingBrainMutation" />
+		<inventoryobject Blueprint="KF_BrainLevitator" Number="1" />
+		<part Name="Body" Anatomy="KF_FloatingBrain_Anatomy" />
+        <tag Name="FloatingBrain" />
+    </object>	
+	
+	<!-- Choas beast mutation object -->
+	<object Name="KF_ChaosLevitator" Inherits="Armor">
+		<part Name="Render" DisplayName="{{extradimensional|levitation field}}" RenderString="o" Tile="Mutations/spacetime_vortex.bmp" TileColor="&amp;K" DetailColor="B" />
+		<part Name="Description" Short="Otherworldly fluctuations life you up." />
+		<part Name="Armor" AV="0" DV="3" Elec="100" CarryBonus="25" WornOn="Feet" />
+		<part Name="Commerce" Value="0" />
+		<part Name="Physics" Weight="0" IsReal="false" />
+		<part Name="NaturalEquipment" />
+		<part Name="MoveCostMultiplier" Amount="-25" />
+		<part Name="SaveModifier" Vs="Move,Knockdown,Knockback,Restraint,Drag" Amount="4" IsEMPSensitive="false" IsTechScannable="true" NameForStatus="PsychicStability" />
+		<part Name="MechanicalWings" ChargeUse="0" Level="6" IsBootSensitive="false" IsRealityDistortionBased="true" RequiresOngoingEffort="false" CrashBreakChance="0" Type="OtherworldlyLevitation" FlightSourceDescription="Otherworldly Levitation" NameForStatus="OtherworldlyLevitation" />
+		<part Name="NoDamage" />
+		<part Name="NoBreak" />
+		<removepart Name="TinkerItem" />
+		<intproperty Name="Natural" Value="1" />
+		<tag Name="ExcludeFromDynamicEncounters" />
+		<tag Name="NoSparkingQuest" />
+		<tag Name="NaturalGear" />
+		<tag Name="VisibleAsDefaultBehavior" />
+		<tag Name="ShowAsPhysicalFeature" />		
+	</object>
+	
+	<!-- floating brain floater -->
+	<object Name="KF_BrainLevitator" Inherits="Armor">
+		<part Name="Render" DisplayName="{{psionic|psionic levitation}}" RenderString="o" Tile="Mutations/spacetime_vortex.bmp" TileColor="&amp;K" DetailColor="B" />
+		<part Name="Description" Short="Your psionic powers allow you to float." />
+		<part Name="Armor" AV="0" DV="0" WornOn="Feet" />
+		<part Name="Commerce" Value="0" />
+		<part Name="Physics" Weight="0" IsReal="false" />
+		<part Name="NaturalEquipment" />
+		<part Name="MoveCostMultiplier" Amount="-100" />
+		<part Name="SaveModifier" Vs="Move,Knockdown,Knockback,Restraint,Drag" Amount="4" IsEMPSensitive="false" IsTechScannable="true" NameForStatus="PsychicStability" />
+		<part Name="MechanicalWings" ChargeUse="0" Level="10" IsBootSensitive="false" IsRealityDistortionBased="true" RequiresOngoingEffort="false" CrashBreakChance="0" Type="PsionicLevitation" FlightSourceDescription="Psionic Levitation" NameForStatus="PsionicLevitation" />
+		<part Name="NoDamage" />
+		<part Name="NoBreak" />
+		<removepart Name="TinkerItem" />
+		<intproperty Name="Natural" Value="1" />
+		<tag Name="ExcludeFromDynamicEncounters" />
+		<tag Name="NoSparkingQuest" />
+		<tag Name="NaturalGear" />
+		<tag Name="VisibleAsDefaultBehavior" />
+		<tag Name="ShowAsPhysicalFeature" />		
+	</object>
+
+	<!-- floating brain dendrite tip -->
+	<object Name="DendriteSpark" Inherits="NaturalWeapon">
+		<part Name="Render" DisplayName="sparking dendrite" RenderString="*" />
+		<part Name="MeleeWeapon" MaxStrengthBonus="1000" BaseDamage="1" Skill="ShortBlades" Stat="Ego" />
+		<part Name="ElementalDamage" Damage="1d4+1" Attributes="Electric" />
+		<tag Name="BaseObject" Value="*noinherit" />
+	</object>	
+	
+	<!-- starter throwing weapon -->
+	
+	<object Name="KF_FlungStone" Inherits="BaseStone">
+		<part Name="Render" DisplayName="egg fragment" Tile="Items/sw_smallstone.bmp" />
+		<part Name="Physics" Weight="1" />
+		<part Name="Description" Short="A sharp egg fragment left over fromy your hatching.  Handy in a pinch." />
+		<part Name="ThrownWeapon" Damage="1d2+1" />
+		<tag Name="ExcludeFromDynamicEncounters" />
+		<tag Name="NoSparkingQuest" />
+	</object>
+	
+	<!-- this is one powerful rock -->
+	<object Name="kf_TKRock" Inherits="Item">
+		<part Name="Render" DisplayName="{{psionic|telekinetic}} rock" RenderString="." Tile="Items/sw_smallstone.bmp" ColorString="&amp;y" DetailColor="Y" Occluding="false"/>
+		<part Name="Physics" Weight="0" Takeable="true" Solid="false" Category="Thrown Weapons" />
+		<part Name="Description" Short="A small rock thrown with great {{psionic|telekinetic force}}." />
+		<part Name="ThrownWeapon" />
+		<part Name="GeomagneticDisc" Damage="1d6+4" ChargeUse="0" />
+		<part Name="Commerce" Value="0" />
+		<tag Name="PathAsIfFlying" />
+		<tag Name="PathAsIfBurrowing" />
+		<tag Name="ExcludeFromDynamicEncounters" />
+		<tag Name="NoSparkingQuest" />
+		<tag Name="Mods" Value="CommonMods,ThrownWeaponMods" />
+		<tag Name="Tier" Value="0" />
+	</object>	
+</objects>

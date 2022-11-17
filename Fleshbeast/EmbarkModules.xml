@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<embarkmodules>
+
+  <module Class="XRL.CharacterBuilds.Qud.QudPregenModule">
+	<pregens>
+      <pregen Name="Cave Tortoise" Genotype="Super Mutant" Tile="Creatures/sw_dream_tortoise.bmp" Foreground="y" Detail="g" Background="k">
+        <code>H4sIAAAAAAAAC81W32vbMBB+L/R/EGaPbkgyso1CHlxvlG3NltWhHYw+yM5hi8qS0Y8EE/K/92Q3iZ3A0hYabDC27rv79Pl0sm51fkaIl9IcFqA0k8K7JN6w1+8N+x97o0+eX+GxZXzecBigQ/8Zy+XcctBo/ufGhKzqxxaalQW4oL+3N70wo4omBtSVY9S9P3bu7msQ0qDbpArwSaA15DEvL8IIAwqf3NVzj3fKfBJabqyCsQBrFOU+mdqYs+QnlDP5CGIsLOe1xkrMnBqKMrbq0PTBvFbaVyQ5kLebBDk3/o42sgUoMrGGCtNyOkjlBlvXL2v/zamMbNzRTLaUHU/ks7sjDVQiBbUny6FbMYPcuoNZ3NN2PI95gYz9pkUDh6Ti2G3a+lo1B+i5mcxpugL62CSuHEJpsbQvyWAfuKOK0Qrq70OLGvqF/5wtb9Nl7b9YklVKLplIScjpUr+HujcqC1UpyTXVBH8HoGpzd9RNWJqZkswy6FTSfueCLZjuVq6mnOqcdnMdIwM076a0e9yVXaqtIC8yFjNpuyQqKqTA3gBQFQllHlt9mlXcDR5OdKIGxigWWwNdPFL3xR0/U6eSCaOnViUZ1TBvz+l6F6NApCZD4EtrZbwgZZyZ8hCYSZtmArQ+hL4LA5yzFETiPmUwbMP3jPNCLkEh9rkNfUslGkc7W7M2PVpEBVTlczEatoFbyCkTuIf3e4cYvzdwHUU74h1LJ8yk1BAZqgzquZFJtX06WEb/E/qCdncvzk32QxYFfV3T6x4P52frJxdAVSXYDQAA</code>
+		<description>
+&amp;c&#249;&amp;y Melee fighter
+&amp;c&#249;&amp;y Highly-armored
+&amp;c&#249;&amp;y Emits sleep gas to disable enemies
+&amp;c&#249;&amp;y {{W|Highly survivable}} starting build
+        </description>
+      </pregen>
+	  
+	  
+    </pregens>
+  </module>
+</embarkmodules>
